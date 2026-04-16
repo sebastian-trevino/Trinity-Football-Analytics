@@ -24,7 +24,7 @@ The core objective was to give coaches a data-driven edge: understanding what dr
 | **Expected Points (EP) Model** | Estimated the point value of each play situation using a Generalized Additive Model (GAM) |
 | **Expected Points Added (EPA)** | Measured each play's contribution relative to expectation — offense and defense |
 | **Play Success Modeling** | Ensemble model predicting play success probability and identifying high-impact variables |
-| **Dashboards** | Interactive Tableau and Python dashboards for coaches to explore play probabilities and performance drivers |
+| **Dashboards** | Interactive Tableau and Python dashboards for coaches to explore play probabilities and performance drivers [Download and open HTML files locally to view interactive dashboards](dashboards/screenshots/) |
 
 ---
 
