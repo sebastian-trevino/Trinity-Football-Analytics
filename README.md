@@ -74,9 +74,9 @@ EPA measures how much each play helped or hurt relative to expectation — the i
 | Defense | -0.134 | Holding opponents below expectation |
 | Special Teams | +3.016 | Small sample, largely field goal results |
 
-### Play Success Probability — Ensemble Model
-
-Built an ensemble classifier combining multiple algorithms to predict whether a play will be successful, and to surface the most impactful performance variables for game planning purposes.
+### Play Success — EPA as the Measure
+Rather than building a separate classifier, play success is defined directly through the EP/EPA framework. A play with positive EPA means it outperformed the expected points for that situation — that's a successful play. This approach grounds the definition of success in context: a 3-yard gain on 3rd-and-2 is successful; the same gain on 3rd-and-10 is not.
+This framework gives coaching staff a consistent, situation-aware lens to evaluate every play on both sides of the ball.
 
 ---
 
