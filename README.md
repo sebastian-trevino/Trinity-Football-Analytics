@@ -127,4 +127,6 @@ football-analytics/
 **Sebastian Trevino** — B.S. Business Analytics & Technology, Minor in Data Science | Trinity University ('26)  
 Former Trinity Varsity Football player (2022–2025) with a unique perspective on bridging on-field experience with data-driven analysis.
 
-📧 srtrevino03@gmail.com · LinkedIn: www.linkedin.com/in/sebastian-trevino-131671310 · HandShake: https://app.joinhandshake.com/profiles/nckwm7
+📧 srtrevino03@gmail.com
+LinkedIn: www.linkedin.com/in/sebastian-trevino-131671310
+HandShake: https://app.joinhandshake.com/profiles/nckwm7
