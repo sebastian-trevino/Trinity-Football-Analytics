@@ -37,12 +37,12 @@ The EP model was built using a Generalized Additive Model (GAM) trained on appro
 
 | Metric | Value |
 |---|---|
-| R² | 0.143 |
-| RMSE | 3.019 |
-| Pseudo R² | 0.150 |
-| AIC | 49,477 |
+| R² | 0.151 |
+| RMSE | 2.977 |
+| Pseudo R² | 0.153 |
+| AIC | 66,685 |
 
-All five model inputs — down, distance, field position, goal-to-go, and game context — were statistically significant (p < 0.01). The R² of 0.143 is consistent with EP models in the broader football analytics literature, reflecting that individual play outcomes are inherently variable and hard to predict, but the model reliably captures the structural value of game situations.
+All five model inputs — down, distance, field position, goal-to-go, and game context — were statistically significant (p < 0.01). The R² of 0.151 is consistent with EP models in the broader football analytics literature, reflecting that individual play outcomes are inherently variable and hard to predict, but the model reliably captures the structural value of game situations.
 
 ---
 
@@ -50,7 +50,7 @@ All five model inputs — down, distance, field position, goal-to-go, and game c
 
 ### Offensive Performance
 
-**Overall EPA:** Trinity's offense averaged **+0.010 EPA per play** — marginally positive, meaning the offense performed slightly above expectation on average across all situations.
+**Overall EPA:** Trinity's offense averaged **+0.028 EPA per play** — marginally positive, meaning the offense performed slightly above expectation on average across all situations.
 
 **By Down:**
 - The offense performs best on 1st down, where play-calling tends to be most diverse and defenses are less prepared.
@@ -64,7 +64,7 @@ All five model inputs — down, distance, field position, goal-to-go, and game c
 **By Field Zone:**
 - Offensive EPA peaks in opponent territory (41–60 yards from end zone), where play-calling opens up and defenses face more coverage decisions.
 - Red zone EPA (inside the 20) is lower than midfield, reflecting increased defensive difficulty and tighter coverage windows — a common pattern in football analytics.
-- Own territory (0–20 yards from own end zone) shows negative EPA, consistent with conservative play-calling and the risk of giving up field position.
+- Own territory (0–20 yards from own end zone) shows positive EPA, consistent with conservative play-calling and the risk of giving up field position.
 
 **Explosive Plays:**
 - Explosive runs (12+ yards) and explosive passes (21+ yards) are rare but critical. They account for a small percentage of total snaps but drive a disproportionate share of total offensive EPA.
@@ -78,15 +78,15 @@ All five model inputs — down, distance, field position, goal-to-go, and game c
 
 ### Defensive Performance
 
-**Overall EPA:** Trinity's defense averaged **-0.134 EPA per play** — meaning the defense held opponents meaningfully below their expected point output. Negative defensive EPA is good: it means Trinity was making plays that cost the opponent more than expected.
+**Overall EPA:** Trinity's defense averaged **-0.137 EPA per play** — meaning the defense held opponents meaningfully below their expected point output. Negative defensive EPA is good: it means Trinity was making plays that cost the opponent more than expected.
 
-**Interpretation:** A defensive EPA of -0.134 per play compounds significantly over a game. Across 60+ defensive plays per game, this represents a substantial points-suppressed advantage for Trinity's defense.
+**Interpretation:** A defensive EPA of -0.137 per play compounds significantly over a game. Across 60+ defensive plays per game, this represents a substantial points-suppressed advantage for Trinity's defense.
 
 ---
 
 ### Special Teams
 
-**Overall EPA:** Special teams averaged **+3.016 EPA** — driven largely by field goal results. This number reflects a small sample of high-leverage plays (field goals, punts, kick returns) and should be interpreted carefully given sample size.
+**Overall EPA:** Special teams averaged **+2.915 EPA** — driven largely by field goal results. This number reflects a small sample of high-leverage plays (field goals, punts, kick returns) and should be interpreted carefully given sample size.
 
 ---
 
@@ -109,10 +109,10 @@ In losses, the EPA fingerprint shows the inverse — negative early-down EPA and
 
 | Distance | Conversion Rate | Avg EPA |
 |---|---|---|
-| Short (≤3 yds) | Highest | Positive |
-| Medium (4–7 yds) | Moderate | Near zero |
-| Standard (8–10 yds) | Below average | Negative |
-| Long (11+ yds) | Lowest | Most negative |
+| Short (≤3 yds) | Highest | Slightly negative |
+| Medium (4–7 yds) | Moderate | Negative |
+| Standard (8–10 yds) | Below average | Near Zero |
+| Long (11+ yds) | Lowest | Slightly negative |
 
 **Implication for coaching:** Play-calling on 2nd down directly shapes 3rd down situation. Getting to 3rd-and-short (via a good 2nd down play) dramatically improves both conversion rate and EPA. Avoiding 3rd-and-long situations is one of the highest-leverage adjustments an offense can make.
 
