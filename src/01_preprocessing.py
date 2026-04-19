@@ -202,6 +202,12 @@ def clean_down_column(df: pd.DataFrame) -> pd.DataFrame:
     df.loc[df['dn'] == 0, 'dn'] = 1
     return df
 
+def clean_result_column(df: pd.DataFrame) -> pd.DataFrame:
+    """Replace bare '1st DN' result with 'Rush' or 'Complete' based on play type."""
+    firstdn_mask = (all_df['result'] == '1st DN')
+    all_df.loc[firstdn_mask & (all_df['play_type'] == 'Run'),  'result'] = 'Rush'
+    all_df.loc[firstdn_mask & (all_df['play_type'] == 'Pass'), 'result'] = 'Complete'
+    return df
 
 def clean_two_point_results(df: pd.DataFrame) -> pd.DataFrame:
     """Standardize result labels for 2-point conversion plays."""
