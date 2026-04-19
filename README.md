@@ -48,11 +48,11 @@ To quantify play value, I built a **Generalized Additive Model (GAM)** that esti
 **Model inputs:** down, distance, yard line, goal to go, game context  
 **Target:** Drive points scored from that play forward
 
-**Model output on ~12,000 plays:**
+**Model output on ~16,000 plays:**
 
 ```
-R²:   0.143    RMSE: 3.019
-Pseudo R²: 0.150    AIC: 49,477
+R²:   0.1510    RMSE: 2.977
+Pseudo R²: 0.153    AIC: 66,685
 ```
 
 > All five features were statistically significant (p < 0.01), confirming that down, distance, field position, goal to go, and game context meaningfully predict scoring outcomes.
@@ -61,8 +61,8 @@ Pseudo R²: 0.150    AIC: 49,477
 
 | Unit | Mean EP | Std Dev |
 |---|---|---|
-| Offense | 2.43 | 1.29 |
-| Defense | 2.13 | 1.17 |
+| Offense | 2.489 | 1.317 |
+| Defense | 2.095 | 1.142 |
 
 ### Expected Points Added (EPA)
 
@@ -70,9 +70,9 @@ EPA measures how much each play helped or hurt relative to expectation — the i
 
 | Unit | Mean EPA | Interpretation |
 |---|---|---|
-| Offense | +0.010 | Marginally positive per play |
-| Defense | -0.134 | Holding opponents below expectation |
-| Special Teams | +3.016 | Small sample, largely field goal results |
+| Offense | +0.028 | Marginally positive per play |
+| Defense | -0.137 | Holding opponents below expectation |
+| Special Teams | +2.915 | Small sample, largely field goal results |
 
 ### Play Success — EPA as the Measure
 Rather than building a separate classifier, play success is defined directly through the EP/EPA framework. A play with positive EPA means it outperformed the expected points for that situation — that's a successful play. This approach grounds the definition of success in context: a 3-yard gain on 3rd-and-2 is successful; the same gain on 3rd-and-10 is not.
