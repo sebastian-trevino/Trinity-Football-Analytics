@@ -42,7 +42,7 @@ The EP model was built using a Generalized Additive Model (GAM) trained on appro
 | Pseudo R² | 0.153 |
 | AIC | 66,685 |
 
-All five model inputs — down, distance, field position, goal-to-go, and game context — were statistically significant (p < 0.01). The R² of 0.151 is consistent with EP models in the broader football analytics literature, reflecting that individual play outcomes are inherently variable and hard to predict, but the model reliably captures the structural value of game situations.
+All five model inputs — down, distance, field position, goal-to-go, and game context — were statistically significant (p < 0.01). While our R² of 0.151 falls below the 0.3–0.5 range reported by professional-level EP models, those models benefit from substantially larger datasets dating back to 1999. Individual play outcomes are inherently variable and difficult to predict, which is reflected across all EP models in the literature. Given our more limited data, this difference in explanatory power is expected; and with our model satisfying all key statistical assumptions, we remain confident in its ability to meaningfully predict expected points and capture the structural value of game situations.
 
 ---
 
