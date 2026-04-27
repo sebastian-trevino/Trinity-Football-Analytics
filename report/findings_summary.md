@@ -50,7 +50,7 @@ All five model inputs — down, distance, field position, goal-to-go, and game c
 
 ### Offensive Performance
 
-**Overall EPA:** Trinity's offense averaged **+0.028 EPA per play** — marginally positive, meaning the offense performed slightly above expectation on average across all situations.
+**Overall EPA:** Trinity's offense averaged **+0.057 EPA per play** — marginally positive and outperforming the models average, meaning the offense performed slightly above expectation on average across all situations.
 
 **By Down:**
 - The offense performs best on 1st down, where play-calling tends to be most diverse and defenses are less prepared.
@@ -78,15 +78,15 @@ All five model inputs — down, distance, field position, goal-to-go, and game c
 
 ### Defensive Performance
 
-**Overall EPA:** Trinity's defense averaged **-0.137 EPA per play** — meaning the defense held opponents meaningfully below their expected point output. Negative defensive EPA is good: it means Trinity was making plays that cost the opponent more than expected.
+**Overall EPA:** Trinity's defense averaged **-0.173 EPA per play** — outperforming the models average, meaning the defense held opponents meaningfully below their expected point output. Negative defensive EPA is good: it means Trinity was making plays that cost the opponent more than expected.
 
-**Interpretation:** A defensive EPA of -0.137 per play compounds significantly over a game. Across 60+ defensive plays per game, this represents a substantial points-suppressed advantage for Trinity's defense.
+**Interpretation:** A defensive EPA of -0.173 per play compounds significantly over a game. Across 60+ defensive plays per game, this represents a substantial points-suppressed advantage for Trinity's defense.
 
 ---
 
 ### Special Teams
 
-**Overall EPA:** Special teams averaged **+2.915 EPA** — driven largely by field goal results. This number reflects a small sample of high-leverage plays (field goals, punts, kick returns) and should be interpreted carefully given sample size.
+**Overall EPA:** Special teams averaged **+2.846 EPA** — underperforms against the models average, driven largely by field goal results. This number reflects a small sample of high-leverage plays (field goals, punts, kick returns) and should be interpreted carefully given sample size.
 
 ---
 
