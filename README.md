@@ -57,14 +57,14 @@ Pseudo R²: 0.153    AIC: 66,685
 
 > All five features were statistically significant (p < 0.01), confirming that down, distance, field position, goal to go, and game context meaningfully predict scoring outcomes.
 
-**EP Summary by Unit:**
+**Model EP Summary by Unit:**
 
 | Unit | Mean EP | Std Dev |
 |---|---|---|
 | Offense | 2.489 | 1.317 |
 | Defense | 2.095 | 1.142 |
 
-### Expected Points Added (EPA)
+### Model Expected Points Added (EPA)
 
 EPA measures how much each play helped or hurt relative to expectation — the industry-standard metric for evaluating play-level performance.
 
