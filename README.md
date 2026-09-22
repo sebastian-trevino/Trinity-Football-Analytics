@@ -2,8 +2,8 @@
 
 **Internship Project | Trinity University Athletics**  
 **Role:** Football Data Analytics Intern  
-**Duration:** May 2025 – August 2025 · January 2026 – Present  
-**Status:** 🔄 Model complete — interactive dashboards in progress
+**Duration:** May 2025 – May 2026  
+**Status:** Complete
 
 ---
 
@@ -82,7 +82,7 @@ This framework gives coaching staff a consistent, situation-aware lens to evalua
 
 ## Data
 
-**~10 years of Trinity University game data (2018–present)**
+**~10 years of Trinity University game data (2018–2026)**
 
 > ⚠️ **Note:** Raw game data is proprietary to Trinity University Athletics and is not included in this repository. `data/TU_Games_synthetic.zip` is a synthetic stand-in with the same file layout and simulated plays so the notebooks can be run end to end. The figures, report, and slideshow in this repo come from the real data. See [data/README.md](data/README.md).
 
