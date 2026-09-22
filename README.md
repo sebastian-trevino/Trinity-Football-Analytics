@@ -137,9 +137,11 @@ set the `TUFB_DATA_DIR` environment variable to point at the real game files ins
 
 ## About Me
 
-**Sebastian Trevino** — B.S. Business Analytics & Technology, Minor in Data Science | Trinity University ('26)  
-Former Trinity Varsity Football player (2022–2025) with a unique perspective on bridging on-field experience with data-driven analysis.
+**Sebastian Trevino** — MS Business Analytics & AI candidate, UT Austin McCombs School of Business ('27), Financial Analytics track  
+B.S. Business Analytics & Technology, Minor in Data Science — Trinity University ('26)
 
-📧 srtrevino03@gmail.com
-LinkedIn: www.linkedin.com/in/sebastian-trevino-131671310
-HandShake: https://app.joinhandshake.com/profiles/nckwm7
+Former Trinity varsity football player and two-year starter (2022–2025), which is where this project came from: I knew the questions the coaching staff actually asked, and built the analytics to answer them.
+
+📧 srtrevino03@gmail.com  
+LinkedIn: https://www.linkedin.com/in/sebastian-trevino-131671310  
+Handshake: https://app.joinhandshake.com/profiles/nckwm7
