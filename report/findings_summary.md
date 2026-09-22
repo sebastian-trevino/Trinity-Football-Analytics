@@ -2,7 +2,7 @@
 
 **Project:** Football Data Analytics Internship  
 **Analyst:** Sebastian Trevino  
-**Data:** 2018–Present (~10 years, 100+ games)  
+**Data:** 2018–Present (~10 years, 100+ games, ~16,000 plays)  
 **Last Updated:** Spring 2026
 
 ---
