@@ -84,7 +84,7 @@ This framework gives coaching staff a consistent, situation-aware lens to evalua
 
 **~10 years of Trinity University game data (2018–present)**
 
-> ⚠️ **Note:** Raw game data is proprietary to Trinity University Athletics and is not included in this repository. `data/TU_Games_synthetic/` is a synthetic stand-in with the same file layout and simulated plays so the notebooks can be run end to end. The figures, report, and slideshow in this repo come from the real data. See [data/README.md](data/README.md).
+> ⚠️ **Note:** Raw game data is proprietary to Trinity University Athletics and is not included in this repository. `data/TU_Games_synthetic.zip` is a synthetic stand-in with the same file layout and simulated plays so the notebooks can be run end to end. The figures, report, and slideshow in this repo come from the real data. See [data/README.md](data/README.md).
 
 ---
 
@@ -97,8 +97,9 @@ This framework gives coaching staff a consistent, situation-aware lens to evalua
 │   ├── 02_EPA_TUFB_Analysis_v001.ipynb      Offensive EPA analysis and visualizations
 │   └── 03_EPA_TUFB_Analysis_Markdown.ipynb  Builds the HTML report and slideshow
 ├── data/
-│   ├── TU_Games_synthetic/                  129 synthetic game files (same layout as
-│   │                                        the real Hudl exports, simulated plays)
+│   ├── TU_Games_synthetic.zip               129 synthetic game files (same layout as
+│   │                                        the real Hudl exports, simulated plays;
+│   │                                        unzipped automatically by the notebooks)
 │   ├── make_synthetic_games.py              Script that generates the synthetic files
 │   └── README.md
 ├── figures/                                 Exported charts (PNG) and interactive
@@ -120,7 +121,7 @@ pip install -r requirements.txt
 jupyter notebook notebooks/
 ```
 
-Run the notebooks in order (01 → 02 → 03). By default they read `data/TU_Games_synthetic/`;
+Run the notebooks in order (01 → 02 → 03). By default they read the synthetic games in `data/TU_Games_synthetic.zip`;
 set the `TUFB_DATA_DIR` environment variable to point at the real game files instead.
 
 ---
