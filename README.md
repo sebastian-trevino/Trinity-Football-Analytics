@@ -1,7 +1,7 @@
 # 🏈 Trinity University Football Analytics
 
 **Internship Project | Trinity University Athletics**  
-**Role:** Football Data Analytics Intern  
+**Role:** Football Data Analytics Lead Intern  
 **Duration:** May 2025 – May 2026  
 **Status:** Complete
 
