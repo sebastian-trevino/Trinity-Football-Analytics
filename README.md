@@ -24,7 +24,7 @@ The core objective was to give coaches a data-driven edge: understanding what dr
 | **Expected Points (EP) Model** | Estimated the point value of each play situation using a Generalized Additive Model (GAM) |
 | **Expected Points Added (EPA)** | Measured each play's contribution relative to expectation — offense and defense |
 | **Play Success Modeling** | Ensemble model predicting play success probability and identifying high-impact variables |
-| **Dashboards** | Interactive Tableau and Python dashboards for coaches to explore play probabilities and performance drivers [Download and open HTML files locally to view interactive dashboards](dashboards/screenshots/) |
+| **Dashboards** | Interactive Tableau and Python dashboards for coaches to explore play probabilities and performance drivers [Download and open HTML files locally to view interactive dashboards](figures/) |
 
 ---
 
@@ -84,32 +84,44 @@ This framework gives coaching staff a consistent, situation-aware lens to evalua
 
 **~10 years of Trinity University game data (2018–present)**
 
-> ⚠️ **Note:** Raw game data is proprietary to Trinity University Athletics and is not included in this repository. Sample outputs and anonymized data structures are provided for reference only.
+> ⚠️ **Note:** Raw game data is proprietary to Trinity University Athletics and is not included in this repository. `data/TU_Games_synthetic/` is a synthetic stand-in with the same file layout and simulated plays so the notebooks can be run end to end. The figures, report, and slideshow in this repo come from the real data. See [data/README.md](data/README.md).
 
 ---
 
 ## Repository Structure
 
 ```
-football-analytics/
-│
-├── README.md
-├── data/
-│   └── sample_data.csv          # Anonymized sample — not real game data
 ├── notebooks/
-│   ├── 01_data_cleaning.ipynb
-│   ├── 02_eda.ipynb
-│   ├── 03_ep_model.ipynb
-│   └── 04_play_success_model.ipynb
-├── src/
-│   ├── preprocessing.py
-│   ├── ep_model.py
-│   └── play_success_model.py
-├── dashboards/
-│   └── screenshots/             # Tableau and Python dashboard exports
-└── reports/
-    └── findings_summary.md
+│   ├── 01_EPA_TUFB_v001.ipynb               Data cleaning → feature engineering →
+│   │                                        GAM Expected Points model → EPA per play
+│   ├── 02_EPA_TUFB_Analysis_v001.ipynb      Offensive EPA analysis and visualizations
+│   └── 03_EPA_TUFB_Analysis_Markdown.ipynb  Builds the HTML report and slideshow
+├── data/
+│   ├── TU_Games_synthetic/                  129 synthetic game files (same layout as
+│   │                                        the real Hudl exports, simulated plays)
+│   ├── make_synthetic_games.py              Script that generates the synthetic files
+│   └── README.md
+├── figures/                                 Exported charts (PNG) and interactive
+│                                            Plotly dashboards (HTML)
+├── docs/
+│   ├── TU_EPA_Offensive_Report.html         Full offensive EPA report
+│   ├── TU_EPA_Offensive_Report_Slideshow_Final.html   Coaching staff slideshow
+│   └── findings_summary.md
+├── requirements.txt
+└── README.md
 ```
+
+## Running it
+
+```bash
+git clone https://github.com/sebastian-trevino/Trinity-Football-Analytics.git
+cd Trinity-Football-Analytics
+pip install -r requirements.txt
+jupyter notebook notebooks/
+```
+
+Run the notebooks in order (01 → 02 → 03). By default they read `data/TU_Games_synthetic/`;
+set the `TUFB_DATA_DIR` environment variable to point at the real game files instead.
 
 ---
 
