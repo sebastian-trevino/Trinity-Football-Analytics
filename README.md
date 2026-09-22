@@ -19,7 +19,7 @@ The core objective was to give coaches a data-driven edge: understanding what dr
 
 | Component | Description |
 |---|---|
-| **Data Pipeline** | Collected, cleaned, and processed ~10 years of game data from Hudl |
+| **Data Pipeline** | Collected, cleaned, and processed eight seasons of game data (2018–2025) from Hudl |
 | **Exploratory Analysis** | Identified trends, strengths, and weaknesses across seasons |
 | **Expected Points (EP) Model** | Estimated the point value of each play situation using a Generalized Additive Model (GAM) |
 | **Expected Points Added (EPA)** | Measured each play's contribution relative to expectation — offense and defense |
@@ -82,7 +82,7 @@ This framework gives coaching staff a consistent, situation-aware lens to evalua
 
 ## Data
 
-**~10 years of Trinity University game data (2018–2026)**
+**Eight seasons of Trinity University game data (2018–2025)**
 
 > ⚠️ **Note:** Raw game data is proprietary to Trinity University Athletics and is not included in this repository. `data/TU_Games_synthetic.zip` is a synthetic stand-in with the same file layout and simulated plays so the notebooks can be run end to end. The figures, report, and slideshow in this repo come from the real data. See [data/README.md](data/README.md).
 
@@ -129,7 +129,7 @@ set the `TUFB_DATA_DIR` environment variable to point at the real game files ins
 ## Key Takeaways
 
 - Engineered the **first-ever analytics internship workflow** for Trinity Football, creating a repeatable process for future analysts
-- Processed and modeled **nearly a decade of play-by-play data** to build a statistically grounded EP/EPA framework
+- Processed and modeled **eight seasons of play-by-play data** to build a statistically grounded EP/EPA framework
 - Delivered **actionable insights to coaching staff** via Tableau dashboards updated throughout the season
 - Currently deploying **play success probability outputs** into interactive dashboards for real-time game planning
 
